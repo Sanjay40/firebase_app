@@ -158,6 +158,8 @@ class _LogInScreenState extends State<LogInScreen> {
                     if(validateKey.currentState!.validate())
                     {
                       instance.signInData(context);
+                      Auth.email.clear();
+                      Auth.pass.clear();
                     }
                   },
                   child: Center(
